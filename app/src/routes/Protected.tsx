@@ -1,5 +1,6 @@
 import { Navigate } from "react-router-dom";
 import { auth } from "../lib/auth";
+import type { JSX } from "react";
 
 export default function Protected({ children }: { children: JSX.Element }) {
   if (!auth.isLoggedIn()) return <Navigate to="/login" replace />;
