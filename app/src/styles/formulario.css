@@ -1,0 +1,107 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.button-group {
+  display: flex;
+  justify-content: center; /* centra los botones horizontalmente */
+  flex-direction: column;
+  gap: 10px; /* espacio entre botones */
+  margin-bottom: 10px;
+}
+button {
+  width: 800px;
+  max-width: 100%;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 10px 50px;
+  background-color: #f0f0f0;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.seccion-actual {
+  margin-top: 20px; /* espacio entre los botones y la sección */
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 20px;
+}
+input,
+select,
+textarea {
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.section-card {
+  border: 2px solid #007bff; /* azul tipo bootstrap */
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  background-color: #f9f9f9; /* gris clarito */
+}
+
+.scroll-row {
+  width: 800px;
+  max-width: 100%;
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+.scroll-row::-webkit-scrollbar {
+  height: 8px;
+}
+
+.button-editar {
+  width: 100px;
+  max-width: 100%;
+  padding: 5px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-right: 0px;
+}
+
+.list-group {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.list-group-item {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  background-color: #f1f1f1;
+}
+
+.list-group-lab {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
