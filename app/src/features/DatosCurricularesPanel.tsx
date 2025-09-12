@@ -119,7 +119,28 @@ export default function DatosCurricularesPanel() {
           <li className="p-3 text-sm text-slate-500">Sin experiencias aún.</li>
         )}
       </ul>
+      <div className="mt-4 p-3 border-light rounded shadow-sm">
+        <div className="flex justify-between items-center mt-4 pb-2">
+          <h5 className="mb-0">Resumen del perfil</h5>
+          <button
+            type="button"
+            className="border px-4 py-2 rounded-lg text-gray-600 hover:underline"
+            onClick={() => alert("Editar sección de Resumen del perfil")}
+          >
+            Editar
+          </button>
+        </div>
 
+        {/* Contenido de la sección */}
+        <div className="mb-3">
+          <textarea
+            className="form-control border border-primary rounded"
+            style={{ minHeight: "150px", width: "100%" }}
+            value={datosCurriculares.resumenPerfil || ""}
+            onChange={(e) => handleChange("resumenPerfil", e.target.value)}
+          />
+        </div>
+      </div>
       {/* Datos curriculares: secciones */}
       <div className="grid gap-4 bg-white p-4 rounded-lg shadow">
         {/* Experiencia laboral */}
